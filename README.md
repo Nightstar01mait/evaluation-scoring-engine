@@ -47,7 +47,7 @@ Final Score = Base Score × Experience Multiplier (Capped at 10)
 
 ✔ All modules tested and functioning as expected.
 
-##📂 Project Structure
+## 📂 Project Structure
 app/
  ├── services/
  │    ├── llm_evaluator.py
@@ -57,23 +57,23 @@ run_performance.py
 requirements.txt
 README.md
 
-###🛠 Installation & Setup
-1️⃣ Clone Repository
+### 🛠 Installation & Setup
+### 1️⃣ Clone Repository
 git clone https://github.com/your-username/evaluation-scoring-logic.git
 cd evaluation-scoring-logic
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 Windows
 python -m venv .venv
 .venv\Scripts\activate
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Run Test Script
+### 4️⃣ Run Test Script
 python run_performance.py
 
-🚀 Status
+# 🚀 Status
 
 ✅ Task completed 100%
 ✅ Score calculation module implemented
