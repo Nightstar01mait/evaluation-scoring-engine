@@ -47,7 +47,7 @@ Final Score = Base Score × Experience Multiplier (Capped at 10)
 
 ✔ All modules tested and functioning as expected.
 
-📂 Project Structure
+##📂 Project Structure
 app/
  ├── services/
  │    ├── llm_evaluator.py
@@ -57,7 +57,7 @@ run_performance.py
 requirements.txt
 README.md
 
-🛠 Installation & Setup
+###🛠 Installation & Setup
 1️⃣ Clone Repository
 git clone https://github.com/your-username/evaluation-scoring-logic.git
 cd evaluation-scoring-logic
