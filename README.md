@@ -47,6 +47,38 @@ Final Score = Base Score × Experience Multiplier (Capped at 10)
 
 ✔ All modules tested and functioning as expected.
 
-# GPT-LLM Module: Comprehensive Interview Evaluation System
+📂 Project Structure
+app/
+ ├── services/
+ │    ├── llm_evaluator.py
+ │    ├── performance_analyzer.py
+ ├── schemas.py
+run_performance.py
+requirements.txt
+README.md
 
-A sophisticated Python-based interview evaluation system that leverages Large Language Models (LLMs) to provide fair, unbiased, and comprehensive assessment of interview responses with advanced features including plagiarism detection, bias testing, and multi-turn context management.
+🛠 Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/your-username/evaluation-scoring-logic.git
+cd evaluation-scoring-logic
+
+2️⃣ Create Virtual Environment
+Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run Test Script
+python run_performance.py
+
+🚀 Status
+
+✅ Task completed 100%
+✅ Score calculation module implemented
+✅ Performance comparison logic implemented
+✅ Model output tested and accurate
+
+
+
