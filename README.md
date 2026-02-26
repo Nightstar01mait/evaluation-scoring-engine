@@ -48,14 +48,19 @@ Final Score = Base Score × Experience Multiplier (Capped at 10)
 ✔ All modules tested and functioning as expected.
 
 ## 📂 Project Structure
-app/
- ├── services/
- │    ├── llm_evaluator.py
- │    ├── performance_analyzer.py
- ├── schemas.py
-run_performance.py
-requirements.txt
-README.md
+evaluation-scoring-logic/
+│
+├── app/
+│ ├── services/
+│ │ ├── llm_evaluator.py
+│ │ └── performance_analyzer.py
+│ │
+│ └── schemas.py
+│
+├── run_performance.py
+├── requirements.txt
+└── README.md
+
 
 ### 🛠 Installation & Setup
 ### 1️⃣ Clone Repository
