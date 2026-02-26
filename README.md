@@ -48,6 +48,7 @@ Final Score = Base Score × Experience Multiplier (Capped at 10)
 ✔ All modules tested and functioning as expected.
 
 ## 📂 Project Structure
+```
 evaluation-scoring-logic/
 │
 ├── app/
@@ -60,6 +61,7 @@ evaluation-scoring-logic/
 ├── run_performance.py
 ├── requirements.txt
 └── README.md
+```
 
 
 ### 🛠 Installation & Setup
