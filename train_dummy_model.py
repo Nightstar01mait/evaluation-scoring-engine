@@ -1,32 +1,49 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
 import joblib
 import os
-#Load dataset
+
+# Load dataset
 df = pd.read_csv("data/essay_dataset.csv")
-# use only for testing prepose print(df.columns)
 
-#Use text and score columns
-X_test = df["full_text"]
-y = df["score"]
+print("Dataset loaded successfully")
+print("Original dataset shape:", df.shape)
 
-#Converter text to numeric feature
-vectorizer = TfidfVectorizer(max_features=5000)
+# Reduce dataset size for faster training
+df = df.sample(3000, random_state=42)
 
-X = vectorizer.fit_transform(X_test)
+print("Reduced dataset shape:", df.shape)
 
-#Train ML model
-model = RandomForestRegressor()
+texts = df["full_text"]
+scores = df["score"]
+
+# Text vectorization
+vectorizer = TfidfVectorizer(max_features=1000)
+
+X = vectorizer.fit_transform(texts)
+y = scores
+
+print("Text vectorization completed")
+
+# Train model
+model = RandomForestRegressor(
+    n_estimators=20,
+    random_state=42,
+    n_jobs=-1
+)
+
+print("Training model...")
 model.fit(X, y)
 
-#Create models folder
+print("Model training completed")
+
+# Create models folder
 os.makedirs("models", exist_ok=True)
 
-#Save model
+# Save model
 joblib.dump(model, "models/dummy_model.pkl")
 joblib.dump(vectorizer, "models/dummy_vectorizer.pkl")
 
-print("Dummy ML model trained successfully ")
+print("Dummy ML model trained successfully")
 print("Model saved to models folder")
